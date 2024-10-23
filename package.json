@@ -1,0 +1,12 @@
+{
+  "name": "loger-web",
+  "version": "1.0.0",
+  "description": "Real-time log viewer for Docker containers",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
