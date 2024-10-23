@@ -30,7 +30,7 @@ Using docker compose :
 - docker build -t loger-web .
 - docker compose up -d
 
-To run locally without docker you'll need to have Node.js 16 then run:
+To run locally without docker you'll need to have Node.js, NPM and EXPRESS (installed using npm) then run:
 - git clone https://github.com/lnxredir/loger-web
 - cd loger-web
 - node server.js
