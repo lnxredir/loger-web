@@ -23,12 +23,19 @@ Debugging: Provides real-time logs with color-coded highlights, making it easy t
 
 **Running and building**:
 
-To run the application under docker simply clone the repository to your server/machine and run:
+To run the application under docker run:
 - git clone https://github.com/lnxredir/loger-web
+- cd loger-web
 - docker build -t loger-web .
-- docker run -d -p 3000:3000 --link <your_container_name> loger-web
+- docker run -d --restart unless-stopped -p 3000:3000 --link <your_container_name> loger-web
 
-To run locally without docker you'll need to have Node.js 16 installed the clone the repository to your server/machine and run:
+Using docker compose :
+- git clone https://github.com/lnxredir/loger-web
+- cd loger-web
+- docker build -t loger-web .
+- docker compose up -d
+
+To run locally without docker you'll need to have Node.js 16 then run:
 - git clone https://github.com/lnxredir/loger-web
 - cd loger-web
 - node server.js
