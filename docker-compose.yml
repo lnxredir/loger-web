@@ -1,0 +1,10 @@
+name: loger-web
+services:
+    loger-web:
+        restart: unless-stopped
+        ports:
+            - 3000:3000
+        container_name: loger-web
+        links:
+            - <your_container_name>
+        image: loger-web
