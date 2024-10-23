@@ -1,5 +1,7 @@
 A simple web-based interface for viewing the real-time logs of a Docker container. It features a clean, user-friendly web page that displays the latest lines of container logs, updated dynamically every second. The logs are color-coded for better readability, and the page uses minimal styling to keep the interface straightforward and focused on the logs.
 
+**See a live preview running a Cowrie SSH honeypot (https://github.com/cowrie/cowrie) here: https://honeypot.frail.com.br/**
+
 **Key Features:**
 
 Real-time Log Streaming: The web page updates automatically every second to display the last lines of the Docker container logs.
@@ -19,4 +21,13 @@ Development & Testing: Helps developers easily monitor Docker container logs dur
 Server Monitoring: Useful for system administrators to keep track of containerized services.
 Debugging: Provides real-time logs with color-coded highlights, making it easy to spot key events and errors.
 
-**See a live preview running a Cowrie SSH honeypot (https://github.com/cowrie/cowrie) here: https://honeypot.frail.com.br/**
+**Running and building**:
+
+To run the application under docker simply clone the repository to your server/machine and run:
+- docker build -t loger-web .
+- docker run -d -p 3000:3000 --link <your_container_name> loger-web
+
+To run locally without docker you'll need to have Node.js 16 installed the clone the repository to your server/machine and run:
+- git clone https://github.com/lnxredir/loger-web
+- cd loger-web
+- node server.js
